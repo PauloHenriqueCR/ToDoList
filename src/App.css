@@ -1,0 +1,180 @@
+body {
+  font-family: arial;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color:#333;
+  background-image: url('./img/bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.app{
+  width: 50vw;
+  position: relative;
+  left: 40%;
+  margin: 0 auto;
+  background-color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1{text-align: center;}
+
+h2{
+  margin-bottom: 10px;
+}
+
+p{
+  margin: 10px 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+button{
+  background-color: #333974;
+  color:#fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: 3s;
+}
+
+button:hover{
+  opacity: 1s;
+}
+
+.btn-alph{
+  display: flex;
+}
+
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.todo{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task{
+  max-width: 30vw;
+  word-break: break-all;
+
+}
+
+.complete {
+   background-color:  #5cb85c;
+}
+
+.remove {
+   background-color: #d9534f;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.filter, .search{
+  border-bottom: 1px solid #555;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-option div{
+  flex: 1 1 0;
+}
+
+.save{
+  background-color: #f3f705;
+}
+
+.category{
+  background-color: #099cff;
+  width: 10vw;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+
+}
+
+@media only screen and (max-width:430px) {
+ body{
+      padding-top:5%;
+      padding-bottom: 80%;
+}
+
+  .app{
+  width: 70vw;
+  position: relative;
+  left:0;
+}
+
+  .btn-todo{
+  display: flex;
+}
+
+
+.content{
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+  word-break: break-all;
+  width: 100%;
+}
+
+.todo{
+  flex-direction: column;
+
+}
+
+.todo > .content{
+  position: relative;
+}
+
+.category{
+  width: 20vw;;
+}
+}
+
+
+@media only screen and (min-width:700px) and (max-width:1024px){
+     body{
+      padding-top:5%;
+      padding-bottom:65%;
+}
+
+  .app{
+  width: 80vw;
+  position: relative;
+  left:10%;
+}
+}
