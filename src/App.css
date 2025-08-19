@@ -1,21 +1,22 @@
 body {
-  font-family: arial;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif ;
   background-color: #f4f4f4;
-  padding: 30px;
+  padding-left: 30%;
   color:#333;
   background-image: url('./img/bg.png');
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
 
-.app{
-  width: 50vw;
-  position: relative;
-  left: 40%;
+.app {
+  width: 40vw;
+  max-width: 100%;               
   margin: 0 auto;
   background-color: #efefef;
   padding: 20px 30px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 h1{text-align: center;}
@@ -127,33 +128,31 @@ input, select{
 }
 
 @media only screen and (max-width:430px) {
- body{
-      padding-top:5%;
-      padding-bottom: 80%;
+ 
+body{
+  padding: 0;
+  padding-bottom: 15%;
 }
 
   .app{
-  width: 70vw;
-  position: relative;
-  left:0;
-}
+    width: 90%;
+    margin: 0 auto;
+ 
+   padding: 10px 6px;
 
-  .btn-todo{
-  display: flex;
-}
+  }
+
 
 
 .content{
   flex-direction: column;
-  align-items: left;
-  position: relative;
+  align-items:flex-start;
   word-break: break-all;
   width: 100%;
 }
 
 .todo{
   flex-direction: column;
-
 }
 
 .todo > .content{
@@ -161,20 +160,28 @@ input, select{
 }
 
 .category{
-  width: 20vw;;
+ min-width: 60px;
+    max-width: 120px;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 4px 0;
+    text-align: center;
+    box-sizing: border-box;
+  
 }
 }
 
 
 @media only screen and (min-width:700px) and (max-width:1024px){
-     body{
-      padding-top:5%;
-      padding-bottom:65%;
+  body{
+   padding: 0 17%;
+  }
+  .app{
+   width: 100%;
+   max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 18px;
+
+  }
 }
 
-  .app{
-  width: 80vw;
-  position: relative;
-  left:10%;
-}
-}

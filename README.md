@@ -1,12 +1,47 @@
-# React + Vite
+# 📝 To-Do List em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto **To-Do List** feito com React! 🚀
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Adicione novas tarefas
+- 🕒 Marque tarefas como concluídas
+- ❌ Remova tarefas da lista
+- 🔄 Interface dinâmica e responsiva
 
-## Expanding the ESLint configuration
+## 🚀 Como rodar o projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone o repositório:
+   ```
+   git clone https://github.com/seu-usuario/seu-repo.git
+   ```
+2. Instale as dependências:
+   ```
+   npm install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```
+   npm start
+   ```
+
+## 📂 Estrutura do Projeto
+
+```
+toDoList/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   └── index.js
+└── README.md
+```
+
+## 💡 Sobre
+
+Este projeto foi desenvolvido para praticar conceitos de React, como componentes, estados e props. Sinta-se à vontade para contribuir! 😃
+
+## 📄 Licença
+
+MIT
+
+---
