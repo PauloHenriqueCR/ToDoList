@@ -1,3 +1,5 @@
+
+/* Estilos globais do body */
 body {
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif ;
   background-color: #f4f4f4;
@@ -9,6 +11,7 @@ body {
   width: 100%;
 }
 
+/* Container principal da aplicação */
 .app {
   width: 40vw;
   max-width: 100%;               
@@ -19,20 +22,27 @@ body {
   box-sizing: border-box;
 }
 
+
+/* Títulos */
 h1{text-align: center;}
+h2{margin-bottom: 10px;}
 
-h2{
-  margin-bottom: 10px;
-}
-
+/* Parágrafos */
 p{
   margin: 10px 0;
 }
 
-input {
-  box-sizing: border-box;
+/* Inputs e selects */
+input { box-sizing: border-box;}
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
 }
 
+/* Botões padrão */
 button{
   background-color: #333974;
   color:#fff;
@@ -45,21 +55,24 @@ button{
   transition: 3s;
 }
 
+/* Efeito hover nos botões */
 button:hover{
   opacity: 1s;
 }
 
+/* Container para botões de ordenação */
 .btn-alph{
   display: flex;
 }
 
-
+/* Lista de tarefas */
 .todo-list{
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
 }
 
+/* Item individual da lista de tarefas */
 .todo{
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,38 +84,35 @@ button:hover{
   align-items: center;
 }
 
+/* Texto da tarefa */
 .task{
   max-width: 30vw;
   word-break: break-all;
-
 }
 
+/* Botão de completar tarefa */
 .complete {
    background-color:  #5cb85c;
 }
 
+/* Botão de remover tarefa */
 .remove {
    background-color: #d9534f;
 }
 
+/* Formulário de nova tarefa */
 .todo-form {
   padding-bottom: 1.5rem;
 }
 
-input, select{
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  width: 100%;
-}
-
+/* Filtros e busca */
 .filter, .search{
   border-bottom: 1px solid #555;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
+/* Opções de filtro */
 .filter-options{
   display: flex;
   justify-content: space-between;
@@ -113,6 +123,8 @@ input, select{
   flex: 1 1 0;
 }
 
+
+/* Botão de salvar */
 .save{
   background-color: #f3f705;
 }
@@ -127,6 +139,10 @@ input, select{
 
 }
 
+
+/* ===========================
+   Responsividade para telas pequenas
+   =========================== */
 @media only screen and (max-width:430px) {
  
 body{
@@ -171,7 +187,9 @@ body{
 }
 }
 
-
+/* ===========================
+   Responsividade para tablets e telas médias
+   =========================== */
 @media only screen and (min-width:700px) and (max-width:1024px){
   body{
    padding: 0 17%;

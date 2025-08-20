@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './App.css'
 import Todo from './components/todo'
 import { Form } from './components/Form'
@@ -6,7 +6,17 @@ import Search from './components/Search'
 import Filter from './components/filter'
 
 function App() {
-  const [todos, setTodos] = useState([])
+
+    // Carrega do localStorage ou inicia com array vazio
+  const [todos, setTodos] = useState(() => {
+    const saved = localStorage.getItem("todos");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // Salva no localStorage sempre que a lista mudar
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
 
   const [search, setSearch] = useState("");
@@ -31,17 +41,12 @@ function App() {
   }
 
 
-  const saveTodo = (id, textUpdate, categoryUpdate)=>{
-
-    const newTodos = [... todos]
-
-     const updateTodos = newTodos.filter((todo) =>
-    todo.id == id ? {... todo, text : textUpdate, category : categoryUpdate} : todo
-  )
-
-    console.log(updateTodos)
-    setTodos(updateTodos)
-  }
+const saveTodo = (id, textUpdate, categoryUpdate) => {
+  const updateTodos = todos.map((todo) =>
+    todo.id === id ? { ...todo, text: textUpdate, category: categoryUpdate } : todo
+  );
+  setTodos(updateTodos);
+};
 
   const removeTodo = (id) =>{
     

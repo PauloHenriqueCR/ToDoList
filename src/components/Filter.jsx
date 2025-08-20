@@ -6,11 +6,11 @@ const Filter = ({filter, setFilter,setSort}) => {
         <h2>Filtrar:</h2>
         <div className='filter-options'>
             <div>
-                <p>Status:</p>
-                <select value={filter} onChange={(e) => setFilter(e.target.value)}> 
-                    <option value="null">Selecione uma categoria</option>
-                    <option value="All">todas</option>
-                    <option value="Completed">completas</option>
+                <label htmlFor="status-filter">Status:</label>
+                <select id="status-filter"  value={filter} onChange={(e) => setFilter(e.target.value)}> 
+                    <option value="">Selecione uma categoria</option>
+                    <option value="All">Todas</option>
+                    <option value="Completed">Completas</option>
                     <option value="Incompleted">Incompletas</option>
                 </select>
             </div>
